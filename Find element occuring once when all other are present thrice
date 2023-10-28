@@ -7,13 +7,17 @@ class Solution {
         sort(arr,arr+N);
         int ans=0;
         for(int i=1;i<N-1;i++){
+//compare current element with previous and next element
+and if current element is not matching with previous and next element then store in a variable . and this is ypur answer. 
             if(arr[i]!=arr[i-1]&&arr[i+1]!=arr[i]){
                 ans=arr[i];
             }
         }
+//compare last element with second last element
         if(arr[N-1]!=arr[N-2]){
             ans=arr[N-1];
         }
+//compare first element with second element
         else if(arr[0]!=arr[1]){
             ans=arr[0];
         }
